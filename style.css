@@ -75,6 +75,20 @@ p{
     height: 430px;
     border-radius: 5px;
 }
+.cup-sec{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    margin: 80px 100px;
+}
+.cup-img{
+    width: 600px;
+    height: auto;
+}
+.footballer-img{
+    width: 300px;
+    height: auto;
+}
 footer{
     text-align: center;
     margin-top: 150px;
