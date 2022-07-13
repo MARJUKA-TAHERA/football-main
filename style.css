@@ -8,7 +8,7 @@ body{
     margin: 0;
 }
 h1{
-    font-size: 60px;
+    font-size: 65px;
 }
 h2{
     font-size: 40px;
@@ -26,8 +26,8 @@ p{
     padding: 80px 40px;
 }
 .banner-img img{
-    width: 556px;
-    height: 438px;
+    width: 100%;
+    height: auto;
 }
 .button{
     text-decoration: none;
@@ -45,13 +45,12 @@ p{
 .player-sec{
    display: grid;
    grid-template-columns: repeat(3, 1fr);
-   justify-items: center;
+   justify-content: center;
    grid-row-gap: 20px;
    grid-column-gap: 20px;
-   margin: 100px 260px;
+   margin: 80px 200px;
 }
 .players{
-    width: 300px;
     padding: 15px;
     border-radius: 5px;
     background-color: #FFFFFF;
@@ -59,21 +58,20 @@ p{
     
 }
 .player-img{
-    width: 300px;
-    height: 256px;
+    width: 100%;
+    height: auto;
 }
 .match-sec{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: space-evenly;
+    justify-content: center;
     grid-column-gap: 60px;
-    margin: 80px 180px;
     text-align: justify;
 
 }
 .match-img{
-    width: 570px;
-    height: 430px;
+    width: 100%;
+    height: auto;
     border-radius: 5px;
 }
 .winner{
@@ -84,28 +82,125 @@ margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-evenly;
-    justify-items: center;
-    margin: 80px 100px;
+    align-items: center;
 }
 .cup-img{
-    width: 600px;
+    width: 100%;
     height: auto;
 }
 .footballer-img{
-    width: 300px;
+    width: 60%;
     height: auto;
 }
 footer{
     text-align: center;
     margin-top: 150px;
-    height: 250px;
+    width: 100%;
+    height: 300px;
 }
 .footer-img{
-    width: 480px;
-    height: 110px;
+    width: 30%;
+    height: auto;
 }
 .icons img{
     width: 18px;
     height: 18px;
-    padding-left: 8px;
+    
 }
+small{
+    width: 13px;
+    height: 13px;
+}
+
+
+
+
+
+    /* Mobile  */
+    @media screen and (min-width:200px) and (max-width:767px) {
+        .banner-sec{
+            grid-template-columns: repeat(1, 1fr);
+           justify-content: center;
+           grid-row-gap: 100px;
+        }
+        .player-sec{
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: center;
+            align-items: center;
+            margin: 50px 10px;
+            
+        }
+        .match-sec{
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: center;
+            margin: 20px 20px;
+            grid-row-gap: 50px;
+            
+        }
+        .cup-sec{
+            grid-template-columns: repeat(1, 1fr);
+           justify-content: center;
+           align-items: center;
+        }
+    }
+
+    /* tablet */ 
+    @media screen and (min-width:768px) and (max-width:1023px){
+        .banner-sec{
+            grid-template-columns: repeat(2, 1fr);
+           justify-items: center;
+           grid-row-gap: 100px;
+        }
+        .player-sec{
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            margin: 50px 10px;
+            
+        }
+        .match-sec{
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            align-items: center;
+            margin: 80px 30px;
+            grid-row-gap: 50px;
+            
+        }
+        .cup-sec{
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+        }
+    }
+
+    /* laptop */
+    @media screen and (min-width:1024px) {
+        .banner-sec{
+            grid-template-columns: repeat(2, 1fr);
+           justify-content: center;
+           justify-items: center;
+           align-items: center;
+           grid-row-gap: 100px;
+        }
+        .player-sec{
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+            margin: 100px 200px;
+           
+            
+        }
+        .match-sec{
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            align-items: center;
+            margin: 80px 100px;
+            grid-row-gap: 50px;
+            
+        }
+        .cup-sec{
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+        }
+    }    
+    
+  
+    
+   
