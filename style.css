@@ -47,7 +47,8 @@ p{
    grid-template-columns: repeat(3, 1fr);
    justify-items: center;
    grid-row-gap: 20px;
-   margin: 100px 230px;
+   grid-column-gap: 20px;
+   margin: 100px 260px;
 }
 .players{
     width: 300px;
@@ -75,10 +76,15 @@ p{
     height: 430px;
     border-radius: 5px;
 }
+.winner{
+text-align: center;
+margin-top: 100px;
+}
 .cup-sec{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-evenly;
+    justify-items: center;
     margin: 80px 100px;
 }
 .cup-img{
